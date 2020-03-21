@@ -1,0 +1,4 @@
+<% @teams.each do |t| %>
+    <% @link="/team/#{t.id}" %>
+    <p><%= t.name %> <a href="<%= @link %>">Show</a></p>
+<% end %>
