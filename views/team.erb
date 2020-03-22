@@ -1,6 +1,7 @@
 <p>Team id: <%=@team.id.to_s%></p>
 <p>Team name: <%=@team.name %></p>
 <p>Team users: </p>
+<p>Team notes: <%=@team.notes %></p>
 <% @team.users.each do |u| %>
     <%= u.id.to_s + "| " + u.name + "| " + u.email %>
     <br>
